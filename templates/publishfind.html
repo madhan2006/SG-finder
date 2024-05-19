@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"></html>
+<html>
+    <head><title>Publish Find</title></head>
+    <link rel="stylesheet" href="/static/styles.css">
+    <body>
+        <h2>Publish Form</h2>
+        <form action="{{ url_for('publishedfind') }}" method="POST">
+        <label for="item_name">Name of Item:</label>
+        <input type="text" id="item_name" name="item_name" required><br><br>
+
+        <label for="item_description">Item description:</label>
+        <input type="text" id="item_description" name="item_description" required><br><br>
+
+        <label for="found_date">Date found:</label>
+        <input type="date" id="found_date" name="found_date" required><br><br>
+
+        <label for="found_location">Date Lost:</label>
+        <input type="text" id="found_location" name="found_location" required><br><br>
+
+        <input type="image" src="https://d1xsi6mgo67kia.cloudfront.net/uploads/2023/03/report.jpg" height="80px" width="90px" alt="Report">
+
+        <!--<button type="submit">Submit</button>-->
+    </form>
+    </body>
+</html>
