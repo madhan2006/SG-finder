@@ -69,6 +69,10 @@ def adminlogin():
 @app.route('/admintest')
 def admintest():
     return render_template('admintest.html')
+
+@app.route('/publishfind')
+def publishfind():
+    return render_template('publishfind.html')
  
 @app.route('/publishedfind', methods = ['POST', 'GET'])
 def publishedfind():
