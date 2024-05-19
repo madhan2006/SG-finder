@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"></html>
+<html>
+    <link rel="stylesheet" href="/static/styles.css">
+    <table border="1px">
+        <thead>
+            <td><strong>Item Name</strong></td>
+            <td><strong>Description</strong></td>
+            <td><strong>Found Date</strong></td>
+            <td><strong>Found Location</strong></td>
+        </thead>
+
+        {% for row in rows %}
+        <tr>
+            <td>{{ row["item_name"] }}</td>
+            <td> {{ row["item_description"]}}</td>
+            <td>{{ row["found_date"] }}</td>
+            <td>{{ row["found_location"] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</html>

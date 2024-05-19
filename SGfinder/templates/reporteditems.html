@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"></html>
+<html>
+    <link rel="stylesheet" href="/static/styles.css">
+    <table border="1px">
+        <thead>
+            <td><strong>Item Name</strong></td>
+            <td><strong>Item Description</strong></td>
+            <td><strong>Lost Date</strong></td>
+            <td><strong>Lost Time</strong></td>
+            <td><strong>Lost Location</strong></td>
+            <td><strong>Name</strong></td>
+            <td><strong>Email</strong></td>
+            <td><strong>Contact No.</strong></td>
+        </thead>
+
+        {% for row in rows %}
+        <tr>
+            <td>{{ row["item_name"] }}</td>
+            <td>{{ row["item_desc"] }}</td>
+            <td> {{ row["item_lost_date"]}}</td>
+            <td>{{ row["item_lost_time"] }}</td>
+            <td>{{ row["item_lost_loc"] }}</td>
+            <td> {{ row["name"]}}</td>
+            <td>{{ row["email"] }}</td>
+            <td>{{ row["contact_num"] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</html>
